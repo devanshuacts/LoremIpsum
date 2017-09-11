@@ -1,8 +1,26 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.details{
+    background-color: #a6a6a6;
+    margin: 10px 10px 10px 10px;
+    padding: 10px;
 }
 
-a {
-  color: #00B7FF;
+li{
+    font-style: italic;
+}
+
+ul a:hover{
+    background-color: #bf80ff; 
+}
+
+#submit{
+    font-size: 1.2em;
+}
+
+.centre{
+    text-align: center;
+    padding: 10px;
+}
+
+.endoftitle{
+    border: 2px solid black;
 }
