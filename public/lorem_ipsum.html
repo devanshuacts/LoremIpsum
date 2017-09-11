@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice tags</title>
+    <link rel="stylesheet" href="stylesheets/style.css"> <!-- link to style sheet -->
+    <script src="javascripts/wordcount.js"></script> <!-- link to javascript file -->
+</head>
+<body>
+
+    <!-- internal styling -->
+    <style>
+        h2{
+            color: #00cc99;
+        }
+    </style>
+    <!-- internal styling -->
+
+    <div class="centre">
+        <a href="http://bit.ly/2xL9XY6" target="_blank"> <img src="images/loren_ipsum.jpg"></a> <!-- a clickable image with a link to google image search result of "lorem ipsum" -->
+        <br></br>
+        <h1 style="color:#00ccff; font-weight:bold">Learning tags..Lorem Ipsum</h1>  <!-- inline css style -->
+        <blockquote>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</blockquote>
+    </div><hr class="endoftitle">
+    
+    <!-- Contents  -->
+    <ul>
+        <h3>Contents</h3>
+        <li> <a href="http://www.lipsum.com/" target="_blank">What is Lorem Ipsum?</a></li>
+        <li>Why do we use it?</li>
+        <li>Table of paragraph counts</li>
+        <li id="submit">Feedback form submission</li>
+    </ul>
+    <!-- Contents  -->
+
+    <h2>What is Lorem Ipsum?</h2>  
+    <p id="para1">
+        <strong>Lorem ipsum </strong> <a href="http://www.lipsum.com/" target="_blank"> sit amet,</a> consectetur adipiscing elit. Ut cursus ante nec molestie hendrerit. Donec pretium auctor lacus non suscipit. 
+        Ut dolor nibh, dictum non ex id, tristique volutpat lectus. Phasellus eget consequat quam. Sed nisl massa, tempor sed purus sit amet, 
+        vestibulum pretium tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer laoreet sapien 
+        id nulla dictum ultrices. Maecenas non ligula in est sodales mattis. Nunc vehicula non risus id egestas. Maecenas vel porta dolor, id volutpat nisl.
+    </p>
+    <h2>Why do we use it?</h2>
+    <p id="para2">Vivamus nec nisl convallis, ullamcorper erat eu, vestibulum erat. Etiam venenatis tellus urna, ac ornare quam tristique et. Proin finibus libero ac mollis placerat. 
+        Quisque mollis lacus sed ligula sodales, ut iaculis eros pulvinar. Mauris non libero non turpis congue elementum. Proin finibus ex vel erat lobortis, ut fringilla enim posuere. 
+        Proin tempus euismod pretium. Nam varius, tortor eu venenatis sodales, ligula tortor rhoncus libero, in varius ex lectus vel orci. In porttitor turpis id neque malesuada vehicula. 
+        Duis laoreet enim eu dolor fermentum tincidunt. Sed sit amet nibh vitae turpis ultrices sollicitudin non id elit. Aenean lacus urna, ornare vitae sem in, viverra dignissim lectus.
+         Vivamus scelerisque metus ac est viverra ullamcorper. Phasellus nec ex ut tortor fringilla molestie non eleifend diam. Fusce ac urna metus. Nulla facilisi.
+    </p>
+    
+    <!-- table with table row table head and table data tag examples -->
+    <table>
+        <thead>
+            <tr>
+                <th>Paragraph no</th>
+                <th>Word Count</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>
+                    <div id="out1"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>
+                    <div id="out2"></div>
+                </td>
+            </tr>
+        </tbody>
+    </table><br>
+
+    <form id="button">
+        <button type="button" onclick="wrdcnt()">Count</button>
+    </form><br><hr>
+
+    <!-- forms with text, email, password, file and submit button example -->
+    <form id="details" action="http://127.0.0.1:4000/myaction" method="POST">
+        <label for="name">Name
+            <input name="name" type="text" placeholder="Enter your name">
+        </label><br><br>
+        <label for="email">Email
+            <input name="email" type="email" placeholder="Enter your email address">
+        </label>
+        <label for="pass">Password
+            <input name="pass" type="password" placeholder="Enter the password">
+        </label><br><br>
+        <!--<label for="name">File
+            <input name="file" type="file">
+        </label>-->
+        <label for="submit">Submit
+            <input name="submit" type="submit" value="Send Message">
+        </label>
+    </form><hr><br><br>
+    <script>
+        document.write("End of document");
+    </script>
+</body>
+</html>
